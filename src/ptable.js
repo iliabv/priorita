@@ -53,6 +53,11 @@ export default {
 
         openOptions() {
             chrome.runtime.openOptionsPage();
+        },
+
+        selectContent(e) {
+            e.target.select();
         }
+
     }
 }

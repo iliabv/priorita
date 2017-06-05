@@ -7,6 +7,7 @@
         <div class="ptable-result">
             <span class="ptable-result-title">Total</span>
             <input class="mcell-input ptable-result-input" type="text"
+                   v-on:focus="selectContent"
                    :value="total"/>
         </div>
         <div class="secondary-actions">
