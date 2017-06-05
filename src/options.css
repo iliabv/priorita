@@ -1,0 +1,57 @@
+.main-container {
+    min-width: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.options {
+    font-size: 14px;
+}
+
+.title {
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+
+.import-btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 100%;
+    text-align: left;
+    background-color: #eeeeff;
+    color: #0000ff;
+    margin: 0;
+    padding: 8px;
+}
+
+.import-btn:hover {
+    cursor: pointer;
+    background-color: #ddddff;
+}
+
+.errors-container {
+    padding: 8px;
+    background-color: #ffcccc;
+}
+
+.error {
+    display: block;
+}
+
+.metrics-container {
+    padding: 8px;
+    background-color: #f8f8f8;
+}
+
+.metric {
+    margin: 0;
+    white-space: pre-wrap;
+}

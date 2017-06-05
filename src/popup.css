@@ -1,0 +1,120 @@
+.popup {
+    min-width: 500px;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.ptable {}
+
+.mcell {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eef;
+}
+
+.mcell-title {
+    flex-grow: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    padding: 0 4px;
+    margin-right: 6px;
+    white-space: nowrap;
+}
+
+.mcell-variants {
+    height: 100%;
+    white-space: nowrap;
+}
+
+.mcell-variant {
+    position: relative;
+    display: inline-flex;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 12px;
+    align-items: center;
+    background-color: #eef;
+    transition: background-color .15s;
+}
+
+.mcell-variant:hover {
+    cursor: pointer;
+    background-color: #ddf;
+}
+
+.mcell-variant--active {
+    background-color: #dfd;
+}
+
+.mcell-variant--active:hover {
+    background-color: #afa;
+}
+
+.mcell-variant-text {
+    vertical-align: middle;
+    color: #333;
+}
+
+.mcell-variant-value {
+    position: absolute;
+    right: 3px;
+    bottom: 1px;
+    font-size: 9px;
+    color: #999;
+}
+
+.mcell-input {
+    box-sizing: border-box;
+    width: 48px;
+    height: 100%;
+    padding: 0 4px;
+    text-align: center;
+    border: none;
+    box-shadow: inset 0 0 10px #eee;
+    font-size: 14px;
+}
+
+.ptable-result {
+    height: 36px;
+    text-align: right;
+}
+
+.ptable-result-title {
+    font-weight: bold;
+    color: #d9d9d9;
+    padding-right: 4px;
+}
+
+.ptable-result-input {
+    font-weight: bold;
+}
+
+.secondary-actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 36px;
+}
+
+.secondary-btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    text-align: left;
+    color: #aaa;
+    margin: 0;
+    padding: 8px;
+    height: 100%;
+}
+
+.secondary-btn:hover {
+    cursor: pointer;
+    color: #44f;
+}

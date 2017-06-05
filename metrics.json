@@ -1,0 +1,57 @@
+{
+    "metrics": [
+        {
+            "title": "Ease of implementation",
+            "description": "",
+            "variants": [
+                {"name": "XS", "value": 4},
+                {"name": "S", "value": 3},
+                {"name": "M", "value": 2},
+                {"name": "L", "value": 1},
+                {"name": "XL", "value": 0}
+            ],
+            "value": 0
+        },
+        {
+            "title": "Traffic size",
+            "description": "",
+            "variants": [
+                {"name": "big", "value": 4},
+                {"name": "medium", "value": 2},
+                {"name": "small", "value": 0}
+            ],
+            "value": 0
+        },
+        {
+            "title": "Immediately noticeable?",
+            "description": "",
+            "variants": [
+                {"name": "yes", "value": 2},
+                {"name": "probably", "value": 1},
+                {"name": "no", "value": 0}
+            ],
+            "value": 0
+        },
+        {
+            "title": "Friction point",
+            "description": "",
+            "variants": [
+                {"name": "big", "value": 3},
+                {"name": "medium", "value": 2},
+                {"name": "small", "value": 1},
+                {"name": "nothing", "value": 0}
+            ],
+            "value": 0
+        },
+        {
+            "title": "Follow-up for",
+            "description": "",
+            "variants": [
+                {"name": "success", "value": 2},
+                {"name": "failure", "value": 1},
+                {"name": "nothing", "value": 0}
+            ],
+            "value": 0
+        }
+    ]
+}

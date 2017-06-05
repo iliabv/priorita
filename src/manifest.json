@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "version": "0.1.0",
+    "name": "Priorita",
+    "description": "Prioritization Assistant",
+    "browser_action": {
+        "default_title": "priorita",
+        "default_popup": "popup.html"
+    },
+    "options_ui": {
+        "page": "options.html",
+        "chrome_style": true,
+        "open_in_tab": true
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+B",
+                "windows": "Ctrl+B",
+                "mac": "Command+B"
+            }
+        }
+    },
+    "permissions": [
+        "clipboardRead",
+        "clipboardWrite",
+        "storage"
+    ]
+}
