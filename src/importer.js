@@ -10,6 +10,7 @@ export default {
         return {
             metrics: this.defaultMetrics,
             errors: [],
+            metricsJSON: metricsUtils.toJSON(this.defaultMetrics),
         };
     },
 
@@ -18,6 +19,7 @@ export default {
             console.log('Storage metrics:', metrics);
             if (metrics && metrics.length !== 0) {
                 this.setMetrics(metrics);
+                this.metricsJSON = metricsUtils.toJSON(this.metrics);
             }
         });
     },

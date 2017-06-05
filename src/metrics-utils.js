@@ -50,3 +50,7 @@ export function checkMetrics(metrics) {
         errors: errors
     };
 }
+
+export function toJSON(metrics) {
+    return JSON.stringify({metrics}, '\n', 2);
+}

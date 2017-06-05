@@ -1,7 +1,7 @@
 <template>
     <div class="importer">
         <input class="hidden" type="file" id="files" v-on:change="handleFileSelect"/>
-        <button class="import-btn" type="button" v-on:click="initFileSelectDialog">
+        <button class="import-btn" v-on:click="initFileSelectDialog">
             Import Metrics
         </button>
 
@@ -11,8 +11,8 @@
             </span>
         </div>
 
-        <div v-if="metrics.length > 0" class="metrics-container">
-            <pre v-for="metric in metrics" class="metric">{{ JSON.stringify(metric, '\n', 2) }}</pre>
+        <div v-if="metricsJSON" class="metrics-container">
+            <pre class="metrics">{{ metricsJSON }}</pre>
         </div>
     </div>
 </template>
