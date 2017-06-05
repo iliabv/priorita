@@ -26,18 +26,20 @@
     font-size: 1em;
     width: 100%;
     text-align: left;
-    background-color: #eeeeff;
-    color: #0000ff;
+    background-color: #cee8ff;
+    color: blue;
     margin: 0;
     padding: 8px;
     background-image: none!important;
     box-shadow: none!important;
     border-radius: 0;
+    font-size: 15px;
+    text-shadow: none;
 }
 
 .import-btn:hover {
     cursor: pointer;
-    background-color: #ddddff;
+    background-color: #bec8ff;
 }
 
 .errors-container {
