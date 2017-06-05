@@ -15,12 +15,12 @@ export function copyToClipboard(text) {
 
 function createFakeCopyElement(value) {
     var element = document.createElement('textarea');
-    element.style.visibility = 'hidden';
-    element.style.height = '0';
+    element.style.height = '1px';
     element.style.border = '0';
     element.style.padding = '0';
     element.style.margin = '0';
     element.style.position = 'absolute';
+    element.style.top = '0';
     element.setAttribute('readonly', '');
     element.value = value;
     return element;
