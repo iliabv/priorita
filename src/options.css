@@ -30,6 +30,9 @@
     color: #0000ff;
     margin: 0;
     padding: 8px;
+    background-image: none!important;
+    box-shadow: none!important;
+    border-radius: 0;
 }
 
 .import-btn:hover {
