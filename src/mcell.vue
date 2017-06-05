@@ -12,7 +12,7 @@
             </div>
         </div>
         <input type="text" class="mcell-input"
-               :tabindex="index + 1"
+               :tabindex="index"
                v-on:focus="selectContent"
                v-model.lazy.number="metric.value"/>
     </div>
