@@ -5,7 +5,7 @@ import importer from './importer.vue';
 import * as metricsStorage from './metrics-storage.js';
 import metricsJSON from '../metrics.json';
 
-const vm = new Vue({
+new Vue({
     el: '#app',
     render: function (createElement) {
         return createElement(importer, {
