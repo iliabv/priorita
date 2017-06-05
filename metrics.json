@@ -16,7 +16,7 @@
             "title": "Aligned with goals",
             "description": "",
             "variants": [
-                {"name": "yes", "value": 2},
+                {"name": "yes", "value": 4},
                 {"name": "almost", "value": 1},
                 {"name": "no", "value": 0}
             ],
