@@ -2,20 +2,34 @@ import * as utils from './utils.js';
 
 const requiredParams = {
     title: s => typeof s === 'string',
-    variants: o => Array.isArray(o),
-    value: o => o !== undefined,
+    variants: o => Array.isArray(o) && checkVariants(o),
+    value: o => typeof o === 'number',
 };
 
+const explanations = {
+    title: '"title" field is required and must contain a string',
+    variants: '"variants" field is required and must contain an array of objects {name: String, value: Number}',
+    value: '"value" filed is required and must contain number'
+};
+
+function checkVariants(list) {
+    return list.every(item => {
+        return item && item.hasOwnProperty('name') && item.hasOwnProperty('value');
+    });
+}
+
 function checkRequiredParams(metrics) {
-    return metrics.reduce((errors, metric)=>{
+    return metrics.reduce((errors, metric, index)=>{
         if (!utils.isObject(metric)) {
             errors.push(metric + ' must be an object');
             return errors;
         }
-        Object.keys(requiredParams).forEach((param, index)=>{
+        Object.keys(requiredParams).forEach((param)=>{
             const checkFunction = requiredParams[param];
             if (!checkFunction(metric[param])) {
-                errors.push(`Error for metric ${index}, something wrong with "${param}" field`);
+                errors.push(
+                    `Error for metric ${index}. ${explanations[param]}`
+                );
             }
         });
         return errors;
