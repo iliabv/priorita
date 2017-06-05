@@ -15,9 +15,9 @@
     "commands": {
         "_execute_browser_action": {
             "suggested_key": {
-                "default": "Ctrl+B",
-                "windows": "Ctrl+B",
-                "mac": "Command+B"
+                "default": "Ctrl+Shift+E",
+                "windows": "Ctrl+Shift+E",
+                "mac": "Command+Shift+E"
             }
         }
     },
