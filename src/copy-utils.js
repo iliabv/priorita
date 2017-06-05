@@ -1,5 +1,6 @@
 export function copyToClipboard(text) {
     return new Promise(function(resolve, reject) {
+        var currentFocused = document.activeElement;
         var element = createFakeCopyElement(text);
         document.body.appendChild(element);
 
@@ -10,6 +11,7 @@ export function copyToClipboard(text) {
         execCopyText(resolve, reject);
 
         document.body.removeChild(element);
+        currentFocused.focus();
     });
 }
 
