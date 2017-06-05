@@ -13,6 +13,16 @@
             "value": 0
         },
         {
+            "title": "Aligned with goals",
+            "description": "",
+            "variants": [
+                {"name": "yes", "value": 2},
+                {"name": "almost", "value": 1},
+                {"name": "no", "value": 0}
+            ],
+            "value": 0
+        },
+        {
             "title": "Traffic size",
             "description": "",
             "variants": [
@@ -23,7 +33,7 @@
             "value": 0
         },
         {
-            "title": "Immediately noticeable?",
+            "title": "Immediately noticeable",
             "description": "",
             "variants": [
                 {"name": "yes", "value": 2},
