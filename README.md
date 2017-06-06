@@ -1,5 +1,6 @@
 # What is it?
 Chrome/Firefox extension to help you prioritize your tasks.
+Import your own metrics, open the extension popup, click on (type in) values for every metric and the result would be copied to your clipboard automatically.
 
 ### Screenshots
 ![Screenshot](./images/screenshot-popup.png)
