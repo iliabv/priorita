@@ -1,3 +1,7 @@
+# What is it?
+Chrome/Firefox extension to help you prioritize your tasks.
+![Screenshot](./images/screenshot-popup.png)
+
 # How to build
 ```bash
 # Clone the repo
