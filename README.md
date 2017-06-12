@@ -26,7 +26,7 @@ npm run build
 ```
 
 # How to install
-[Insall from Chrome Store](https://chrome.google.com/webstore/detail/priorita/dedgeedhgdcjikdikaaegnlccigmlohn)
+[Install from Chrome Store](https://chrome.google.com/webstore/detail/priorita/dedgeedhgdcjikdikaaegnlccigmlohn)
 
 ## How to install dev version
 Before installing build the extension (see the instrictions above)
